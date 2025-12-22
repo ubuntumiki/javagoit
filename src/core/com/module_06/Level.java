@@ -1,8 +1,8 @@
-package core.com.module_06;
+package example.com.module_06;
 
 class Level {
-    private Point[] points;
     private LevelInfo levelInfo;
+    private Point[] points;
 
     public Level(LevelInfo levelInfo, Point[] points) {
         this.levelInfo = levelInfo;
@@ -11,7 +11,7 @@ class Level {
 
     @Override
     public String toString() {
-        return "Quarke level, name is " + levelInfo.name + ", difficulty is " + levelInfo.getDifficulty() + ", point count is " + points.length;
+        return "Quarke level, name is " + levelInfo.getName() + ", difficulty is " + levelInfo.getDifficulty() + ", point count is " + points.length;
     }
 
     static class Point {
@@ -48,6 +48,14 @@ class Level {
             return difficulty;
         }
     }
+
+    public int calculateLevelHash() {
+        int sum = 0;
+        for (Point p : points) {
+            sum += p.getX() * p.getY();
+        }
+        return sum;
+    }
 }
 
 class LevelTest {
@@ -60,7 +68,7 @@ class LevelTest {
 
         Level.LevelInfo info = new Level.LevelInfo("Quarke Intro", "Easy");
 
-        //Quarke level, name is Quarke Intro, difficulty is Easy, point count is 3
-        System.out.println(new Level(info, points));
+        //3015
+        System.out.println(new Level(info, points).calculateLevelHash());
     }
 }
