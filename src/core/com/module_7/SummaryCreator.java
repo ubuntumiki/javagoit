@@ -6,7 +6,7 @@ class SummaryCreator {
             return text;
         } else {
             String first = text.substring(0, 15);
-            if (!text.substring(15, 16).equals(" ")) {
+            if (text.charAt(15) != ' ') {
                 return first + "...";
             } else {
                 return first;
