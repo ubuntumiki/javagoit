@@ -1,4 +1,4 @@
-package core.com.module_09;
+package core.com.module_09.testarraylist;
 
 public class MyArrayListTests {
     public static void main(String[] args) {
