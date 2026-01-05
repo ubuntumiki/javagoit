@@ -6,7 +6,7 @@ public class MyArrayListTwo<T> {
     private Object[] values = new Object[10];
     private int size = 0;
 
-    private void add(T obj) {
+    public void add(T obj) {
         rebalance();
         values[size] = obj;
         size++;
@@ -23,7 +23,7 @@ public class MyArrayListTwo<T> {
     }
 
     public static void main(String[] args) {
-        MyArrayListTwo<String> arrayList = new MyArrayListTwo();
+        MyArrayListTwo<String> arrayList = new MyArrayListTwo<>();
         arrayList.add("abc0");
         arrayList.add("abc1");
         arrayList.add("abc2");
