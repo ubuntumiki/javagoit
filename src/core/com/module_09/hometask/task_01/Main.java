@@ -24,7 +24,7 @@ public class Main {
 //        arrayList.add("abc11");
 
         System.out.println("arrayList.get(0) = " + arrayList.get(0));
-        System.out.println("arrayList.get(0) = " + arrayList.get(11));
+        System.out.println("arrayList.get(11) = " + arrayList.get(11));
 //        System.out.println("arrayList.get(0) = " + arrayList.get(14));
         System.out.println("arrayList.size() = " + arrayList.size());
 

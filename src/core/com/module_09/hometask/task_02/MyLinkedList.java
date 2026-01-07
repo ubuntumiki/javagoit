@@ -61,13 +61,24 @@ public class MyLinkedList<T> {
     public T get(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Error");
+            return null;
         }
+        return nodeAt(index).value;
+    }
 
-        Node<T> current = first;
-        for (int i = 0; i < index; i++) {
-            current = current.next;
+    private Node<T> nodeAt(int index) {
+        if (index < size / 2) {
+            Node<T> current = first;
+            for (int i = 0; i < index; i++) {
+                current = current.next;
+            }
+            return current;
+        } else {
+            Node<T> current = last;
+            for (int i = size - 1; i > index; i--) {
+                current = current.prev;
+            }
+            return current;
         }
-
-        return current.value;
     }
 }

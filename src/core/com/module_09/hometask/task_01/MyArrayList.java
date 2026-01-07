@@ -40,7 +40,7 @@ public class MyArrayList<T> {
 
     private void rebalance() {
         if (values.length == size) {
-            values = Arrays.copyOf(values, values.length + 5);
+            values = Arrays.copyOf(values, values.length * 2);
         }
     }
 }
