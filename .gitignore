@@ -30,4 +30,6 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-student-*.txt
+*.txt
+*.jar
+*.dat
