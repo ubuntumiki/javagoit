@@ -7,14 +7,14 @@ import java.io.ObjectOutputStream;
 
 public class Program {
     public static void main(String[] args) {
-        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("C:\\Java\\project\\javagoit\\src\\core\\com\\module_10\\serializable\\person.dat"))) {
+        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/core/com/module_10/serializable/person.dat"))) {
             Person2 person = new Person2("Miki", 45, 1.75, true);
             oos.writeObject(person);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
-        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:\\Java\\project\\javagoit\\src\\core\\com\\module_10\\serializable\\person.dat"))) {
+        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/core/com/module_10/serializable/person.dat"))) {
             Person2 p = (Person2) ois.readObject();
             System.out.printf("Name: %s \t Age: %d \n", p.getName(), p.getAge());
         } catch (Exception ex) {

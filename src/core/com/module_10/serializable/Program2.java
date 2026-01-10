@@ -7,7 +7,7 @@ public class Program2 {
 
     public static void main(String[] args) {
 
-        String filename = "people.dat";
+        String filename = "src/core/com/module_10/serializable/people.dat";
 
         // створимо список об'єктів, які будемо записувати
         ArrayList<Person2> people = new ArrayList<Person2>();
