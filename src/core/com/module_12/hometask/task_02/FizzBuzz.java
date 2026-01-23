@@ -9,7 +9,7 @@ public class FizzBuzz {
     private final BlockingQueue<String> queue = new ArrayBlockingQueue<>(1);
 
     private final Object  lock = new Object();
-    private int current;
+    private int current = 1;
     private boolean produced = false;
 
     FizzBuzz(int n) {
