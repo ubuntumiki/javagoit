@@ -23,7 +23,6 @@ public class Main {
 
     private static String formatElapsed(long elapsedMillis) {
         Duration d = Duration.ofMillis(elapsedMillis);
-        return String.format("%02d:%02d:%02d.%03d",
-                d.toHours(), d.toMinutesPart(), d.toSecondsPart(), d.toMillisPart());
+        return String.format("%02d:%02d:%02d", d.toHours(), d.toMinutesPart(), d.toSecondsPart());
     }
 }
