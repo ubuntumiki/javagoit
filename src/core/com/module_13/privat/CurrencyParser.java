@@ -35,7 +35,6 @@ public class CurrencyParser {
 
 //        System.out.println("json = " + json);
 
-
             //convert json -> java Object
             Type typeToken = TypeToken
                     .getParameterized(List.class, CurrencyItem.class)
@@ -64,7 +63,6 @@ public class CurrencyParser {
                     .orElseThrow();
 
             System.out.println("UAH to USD by course :" + uahUsd);
-
         }
     }
 }
