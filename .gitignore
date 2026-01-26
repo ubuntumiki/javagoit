@@ -34,3 +34,4 @@ bin/
 *.jar
 *.dat
 *.iml
+/src/core/com/module_13/habrparse/habrparse.html
