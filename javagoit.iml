@@ -7,16 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/gson-2.13.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="gson-2.13.2" level="project" />
     <orderEntry type="library" name="jsoup-1.22.1" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.21.0" level="project" />
+    <orderEntry type="library" name="jackson-core-2.21.0 (2)" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.21 (2)" level="project" />
   </component>
 </module>
